@@ -20,7 +20,7 @@ file_input.each_line do |line|
   end 
     
   sline = line.split(/\t/)
-  num = (sline[1].length > 60)?1:0   
+  num = (sline[1].length > 65)?1:0   
   str = str+"#{sline[0]},#{num}\n"     
   matches += 1
 end
