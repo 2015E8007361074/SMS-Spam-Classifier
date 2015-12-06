@@ -1,0 +1,10 @@
+GEM
+  remote: https://ruby.taobao.org/
+  specs:
+    stemmer (1.0.1)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  stemmer
