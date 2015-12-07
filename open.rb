@@ -20,7 +20,27 @@ file_input.each_line do |line|
   end 
     
   sline = line.split(/\t/)
-  num = (sline[1].length > 65)?1:0   
+#  num = (sline[1].length > 65)?1:0
+   if sline[1].length > 65
+     num = 1
+   elsif sline[1] =~ /xxxxxx+/
+     num = 1
+   elsif sline[1] =~ /www/
+     num = 1
+   elsif sline[1] =~ /【.*】/
+     num = 1
+   elsif sline[1] =~ /！/
+     num = 1
+   elsif sline[1] =~ /您好/
+     num = 1
+   elsif sline[1] =~ /欢迎您/
+     num = 1
+   elsif sline[1] =~ /↓/
+     num = 1
+   else
+     num = 0
+   end
+     
   str = str+"#{sline[0]},#{num}\n"     
   matches += 1
 end

@@ -16,11 +16,12 @@ file_input.each_line do |line|
   
   if matches >= max_matches
      break     
-  end
+  end  
   str = str + line
   matches += 1
+  
 end 
-#puts str  #输出str
+puts str  #输出str
 
 file_output.write(str)
 
