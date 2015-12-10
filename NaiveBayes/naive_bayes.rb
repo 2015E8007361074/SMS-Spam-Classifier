@@ -55,6 +55,7 @@ class NaiveBayes
   end
 
   def prettify_probabilities(document)
+    
     probs = probabilities(document).sort {|a,b| a[1]<=>b[1]}
     totals = 0
     pretty = Hash.new

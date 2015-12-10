@@ -141,6 +141,8 @@ b.train("not_interesting", "In times of prosperity, Wall Street executives are h
 
 b.train("not_interesting", "Obama calls recession a disaster President Obama has called the contraction of the US economy in the final quarter of 2008 a \"continuing disaster\" for the US. Speaking at the White House, he also announced a new task force to help middle-class working families. US economic output fell 3.8%, the worst quarterly contraction in more than 26 years, official figures have shown. It is the first time the United States has seen consecutive quarterly declines since 1991. The rate is annualised, which means that if the economy were to shrink at the same rate for a whole year as it did in the final quarter, it would shrink by 3.8%.")
 
+
+
 text = " The woman had six other children before the set of eight, which were only the second set of octuplets recorded in the U.S. The babies' grandfather said Friday that his daughter wanted one more child and didn't expect this to happen. Kaiser Permanente's Bellflower Medical Center reports that all is well with the mother and children. Seven babies are breathing unassisted, and one is receiving assisted oxygen through a tube in the nose. Seven are being tube-fed donated breast milk."
 
 text2 = "The online user-generated encyclopaedia Wikipedia is considering a radical change to how it is run. It is proposing a review of the rules, that would see revisions being approved before they were added to the site. The proposal comes after edits of the pages of Senators Robert Byrd and Edward Kennedy gave the false impression both had died. The editing change has proved controversial and sparked a row among the site's editors. Wikipedia's founder, Jimmy Wales, is proposing a system of flagged revisions, which would mean any changes made by a new or unknown user would have to be approved by one of the site's editors, before the changes were published."
@@ -189,6 +191,7 @@ puts "text6 > " + b.classify(text6)
 puts
 prob7 = b.probabilities(text7)
 pp b.probabilities(text7)
+
 puts "text7 > " + b.classify(text7)
 
 puts "text7 > " + b.classify(text7)
