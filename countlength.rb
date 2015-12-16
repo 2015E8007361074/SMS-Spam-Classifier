@@ -4,7 +4,7 @@ t1 = Time.now
 p t1
 
 
-input = "D:/ruby/SMS-Spam-Classifier/data/data_train.txt"
+input = "D:/ruby/SMS-Spam-Classifier/weka/data_train.txt"
 file_input = File.open(input)
 
 spamsms_wc = 0

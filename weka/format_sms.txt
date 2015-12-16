@@ -1,0 +1,15 @@
+@relation sms_spam_classifier 
+
+@attribute SMSLen numeric
+@attribute SPNum numeric
+@attribute PhoneNum numeric
+@attribute BankNum numeric
+@attribute URL numeric
+
+@attribute Outcome {yes, no}
+
+@data
+
+85,1,1,1,1,yes
+
+
